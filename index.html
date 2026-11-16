@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUN GLOW | Premier Bridal &amp; Beauty Studio in Vavuniya</title>
+  <meta name="description" content="Modern Elegance &amp; Timeless Radiance — Vavuniya’s Premier Bridal &amp; Beauty Studio. Registration &amp; bridal makeovers, hair styling, advanced facials, and gel nails." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 Free CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              sapphire: '#1E3A8A',
+              ocean: '#0284C7',
+              sky: '#38BDF8',
+              offwhite: '#F8FAFC',
+              coolgray: '#F1F5F9',
+              charcoal: '#1E293B',
+              slate: '#64748B',
+              border: '#CBD5E1',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom subtle glassmorphism and animations */
+    .glass-header {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-gradient {
+      background: linear-gradient(to right, rgba(15, 23, 42, 0.92), rgba(30, 58, 138, 0.72));
+    }
+    @media (max-width: 640px) {
+      .hero-gradient {
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 58, 138, 0.78) 100%);
+      }
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94A3B8;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0284C7;
+    }
+  </style>
+</head>
+<body class="bg-brand-offwhite text-brand-charcoal font-sans antialiased selection:bg-brand-ocean selection:text-white pb-16 md:pb-0">
+
+  <!-- Top Info Strip (Desktop) -->
+  <div class="hidden md:block bg-brand-navy text-slate-200 text-xs py-2 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-location-dot text-brand-sky"></i>
+          6, 60 1st Cross St, Vavuniya 43000, Sri Lanka
+        </span>
+        <span class="flex items-center gap-2">
+          <i class="fa-regular fa-clock text-brand-sky"></i>
+          Mon – Sat: 8:30 AM – 6:30 PM (Sun: Closed)
+        </span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <span class="flex items-center gap-1.5 text-amber-300 font-medium">
+          <i class="fa-solid fa-star"></i> 4.6 / 5 Google Rated (18+ Reviews)
+        </span>
+        <a href="tel:+94774391667" class="hover:text-brand-sky transition font-semibold">
+          <i class="fa-solid fa-phone mr-1 text-brand-sky"></i> 077 439 1667
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. Responsive Navigation Bar -->
+  <header class="sticky top-0 z-40 glass-header border-b border-brand-border/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 sm:h-20">
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-2.5 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-navy via-brand-sapphire to-brand-ocean flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-sparkles text-brand-sky text-lg"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl sm:text-2xl font-extrabold tracking-wider text-brand-navy leading-none">
+              SUN GLOW
+            </span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-brand-ocean font-semibold mt-0.5">
+              Bridal &amp; Beauty Studio
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-sm font-semibold text-brand-charcoal hover:text-brand-ocean transition">Home</a>
+          <a href="#services" class="text-sm font-semibold text-brand-charcoal hover:text-brand-ocean transition">Services</a>
+          <a href="#gallery" class="text-sm font-semibold text-brand-charcoal hover:text-brand-ocean transition">Gallery</a>
+          <a href="#reviews" class="text-sm font-semibold text-brand-charcoal hover:text-brand-ocean transition">Reviews</a>
+          <a href="#contact" class="text-sm font-semibold text-brand-charcoal hover:text-brand-ocean transition">Contact</a>
+        </nav>
+
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#booking" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-navy hover:bg-brand-sapphire text-white text-sm font-semibold shadow-sm transition">
+            <i class="fa-regular fa-calendar-check text-brand-sky"></i>
+            Book Appointment
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Open Navigation Menu" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-xl text-brand-navy bg-brand-coolgray hover:bg-slate-200 border border-brand-border transition focus:outline-none">
+          <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Out Navigation Drawer -->
+    <div id="mobile-drawer" class="fixed inset-0 z-50 hidden">
+      <!-- Backdrop -->
+      <div id="drawer-backdrop" class="fixed inset-0 bg-brand-navy/60 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+
+      <!-- Slide-over panel -->
+      <div id="drawer-panel" class="fixed inset-y-0 right-0 w-72 max-w-[85vw] bg-white shadow-2xl border-l border-brand-border transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between">
+        <div>
+          <!-- Drawer Header -->
+          <div class="flex items-center justify-between px-5 h-16 border-b border-brand-border bg-brand-offwhite">
+            <div class="flex items-center gap-2">
+              <span class="w-8 h-8 rounded-lg bg-brand-navy flex items-center justify-center text-brand-sky">
+                <i class="fa-solid fa-sparkles text-sm"></i>
+              </span>
+              <span class="font-extrabold text-brand-navy tracking-wide text-lg">SUN GLOW</span>
+            </div>
+            <button id="close-drawer-btn" type="button" aria-label="Close Menu" class="p-2 rounded-lg text-brand-slate hover:text-brand-navy hover:bg-brand-coolgray transition">
+              <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+          </div>
+
+          <!-- Drawer Links -->
+          <nav class="px-4 py-6 space-y-1.5">
+            <a href="#home" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold text-brand-charcoal hover:bg-brand-coolgray hover:text-brand-ocean transition">
+              <i class="fa-solid fa-house w-5 text-brand-ocean"></i> Home
+            </a>
+            <a href="#services" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold text-brand-charcoal hover:bg-brand-coolgray hover:text-brand-ocean transition">
+              <i class="fa-solid fa-wand-magic-sparkles w-5 text-brand-ocean"></i> Services
+            </a>
+            <a href="#gallery" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold text-brand-charcoal hover:bg-brand-coolgray hover:text-brand-ocean transition">
+              <i class="fa-regular fa-images w-5 text-brand-ocean"></i> Gallery
+            </a>
+            <a href="#reviews" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold text-brand-charcoal hover:bg-brand-coolgray hover:text-brand-ocean transition">
+              <i class="fa-regular fa-star w-5 text-brand-ocean"></i> Reviews
+            </a>
+            <a href="#booking" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold text-brand-charcoal hover:bg-brand-coolgray hover:text-brand-ocean transition">
+              <i class="fa-regular fa-calendar-check w-5 text-brand-ocean"></i> Book Now
+            </a>
+            <a href="#contact" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold text-brand-charcoal hover:bg-brand-coolgray hover:text-brand-ocean transition">
+              <i class="fa-solid fa-location-dot w-5 text-brand-ocean"></i> Location &amp; Hours
+            </a>
+          </nav>
+        </div>
+
+        <!-- Drawer Bottom Info -->
+        <div class="p-5 border-t border-brand-border bg-brand-offwhite space-y-3">
+          <div class="text-xs text-brand-slate space-y-1">
+            <p class="font-semibold text-brand-navy">Studio Hours:</p>
+            <p>Mon – Sat: 8:30 AM – 6:30 PM</p>
+            <p class="text-rose-600 font-medium">Sunday: Closed</p>
+          </div>
+          <a href="https://wa.me/94774391667?text=Hello%20SUN%20GLOW!%20I%20would%20like%20to%20inquire%20about%20an%20appointment." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-ocean text-white font-semibold text-sm shadow-md hover:bg-sky-700 transition">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Studio
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section id="home" class="relative overflow-hidden bg-brand-navy">
+    <!-- Background High-Res Image -->
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80"
+        alt="Luxury Bridal Makeup and Beauty Studio at SUN GLOW Vavuniya"
+        class="w-full h-full object-cover object-center opacity-55"
+      />
+      <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+      <div class="max-w-2xl">
+        <!-- Google Rating Trust Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-medium mb-6 shadow-sm">
+          <span class="text-amber-300 font-bold">★ 4.6/5</span>
+          <span class="text-slate-200">Google Rated Studio in Vavuniya</span>
+        </div>
+
+        <!-- Tagline Eyebrow -->
+        <p class="text-brand-sky font-semibold text-xs sm:text-sm uppercase tracking-[0.18em] mb-3">
+          Modern Elegance &amp; Timeless Radiance
+        </p>
+
+        <!-- Headline -->
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.12] tracking-tight mb-5">
+          Refined Beauty, Tailored Perfection.
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-slate-200 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+          Experience bespoke registration &amp; bridal makeovers, advanced skin care, hair straightening, and gel nails in a calm, professional environment.
+        </p>
+
+        <!-- Dual Mobile-Friendly CTAs -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
+          <a
+            href="https://wa.me/94774391667?text=Hello%20SUN%20GLOW%20Vavuniya!%20I%20would%20like%20to%20book%20an%20appointment."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-brand-ocean hover:bg-sky-500 text-white font-bold text-base shadow-lg shadow-sky-900/40 transition-all active:scale-[0.99]"
+          >
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Book via WhatsApp
+          </a>
+          <a
+            href="#services"
+            class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-md font-semibold text-base transition-all"
+          >
+            Explore Services
+            <i class="fa-solid fa-arrow-down text-sm text-brand-sky"></i>
+          </a>
+        </div>
+
+        <!-- Quick Highlights Row -->
+        <div class="mt-10 pt-6 border-t border-white/15 grid grid-cols-3 gap-4 max-w-lg text-white">
+          <div>
+            <p class="text-xl sm:text-2xl font-bold text-brand-sky">4.6 ★</p>
+            <p class="text-xs text-slate-300 mt-0.5">18+ Verified Reviews</p>
+          </div>
+          <div>
+            <p class="text-xl sm:text-2xl font-bold text-white">100%</p>
+            <p class="text-xs text-slate-300 mt-0.5">Hygienic &amp; Gentle</p>
+          </div>
+          <div>
+            <p class="text-xl sm:text-2xl font-bold text-brand-sky">Mon–Sat</p>
+            <p class="text-xs text-slate-300 mt-0.5">8:30 AM – 6:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Signature Services Grid -->
+  <section id="services" class="py-16 sm:py-24 bg-brand-offwhite">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-brand-coolgray border border-brand-border text-brand-ocean text-xs font-bold uppercase tracking-widest mb-3">
+          Our Expertise
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-navy mb-4">
+          Signature Studio Services
+        </h2>
+        <p class="text-brand-slate text-sm sm:text-base leading-relaxed">
+          Vavuniya’s premier bridal and beauty studio offering personalized care, premium products, and unhurried artistry for every occasion.
+        </p>
+      </div>
+
+      <!-- 5 Visually Structured Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+        <!-- Service 1: Registration & Bridal Makeovers -->
+        <article class="bg-white rounded-2xl border border-brand-border overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-ocean/50 transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[16/10] overflow-hidden bg-brand-coolgray">
+            <img
+              src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80"
+              alt="Registration and Bridal Makeovers at SUN GLOW"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-navy/90 text-white text-xs font-semibold backdrop-blur-sm">
+              Most Popular
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <h3 class="text-xl font-bold text-brand-navy">Registration &amp; Bridal Makeovers</h3>
+              </div>
+              <p class="text-brand-slate text-sm leading-relaxed mb-6">
+                Flawless HD &amp; Airbrush bridal styling crafted with patience and precision for your milestone day.
+              </p>
+            </div>
+            <button
+              type="button"
+              onclick="selectServiceAndScroll('Registration & Bridal Makeovers')"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-coolgray hover:bg-brand-ocean text-brand-navy hover:text-white font-semibold text-sm border border-brand-border hover:border-brand-ocean transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Book This Service</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 2: Hair Straightening & Styling -->
+        <article class="bg-white rounded-2xl border border-brand-border overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-ocean/50 transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[16/10] overflow-hidden bg-brand-coolgray">
+            <img
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80"
+              alt="Hair Straightening and Bridal Hair Styling"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-sapphire/90 text-white text-xs font-semibold backdrop-blur-sm">
+              Hair Studio
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-brand-navy mb-2">Hair Straightening &amp; Styling</h3>
+              <p class="text-brand-slate text-sm leading-relaxed mb-6">
+                Professional keratin smoothing, rebonding, and modern bridal updos tailored to protect hair health and shine.
+              </p>
+            </div>
+            <button
+              type="button"
+              onclick="selectServiceAndScroll('Hair Straightening & Styling')"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-coolgray hover:bg-brand-ocean text-brand-navy hover:text-white font-semibold text-sm border border-brand-border hover:border-brand-ocean transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Book This Service</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 3: Advanced Facials & Skin Care -->
+        <article class="bg-white rounded-2xl border border-brand-border overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-ocean/50 transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[16/10] overflow-hidden bg-brand-coolgray">
+            <img
+              src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80"
+              alt="Advanced Facials and Skin Care Treatments"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-ocean/90 text-white text-xs font-semibold backdrop-blur-sm">
+              Skin Pampering
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-brand-navy mb-2">Advanced Facials &amp; Skin Care</h3>
+              <p class="text-brand-slate text-sm leading-relaxed mb-6">
+                Deep-cleansing, rejuvenating, and skin-pampering therapies for a healthy glow and refreshed complexion.
+              </p>
+            </div>
+            <button
+              type="button"
+              onclick="selectServiceAndScroll('Advanced Facials & Skin Care')"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-coolgray hover:bg-brand-ocean text-brand-navy hover:text-white font-semibold text-sm border border-brand-border hover:border-brand-ocean transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Book This Service</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 4: Gel Nails & Nail Art -->
+        <article class="bg-white rounded-2xl border border-brand-border overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-ocean/50 transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[16/10] overflow-hidden bg-brand-coolgray">
+            <img
+              src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+              alt="Gel Nails and Bespoke Nail Art"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-navy/90 text-white text-xs font-semibold backdrop-blur-sm">
+              Nail Bar
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-brand-navy mb-2">Gel Nails &amp; Nail Art</h3>
+              <p class="text-brand-slate text-sm leading-relaxed mb-6">
+                Long-lasting glossy gel extensions, manicures, and bespoke bridal nail designs crafted with fine detail.
+              </p>
+            </div>
+            <button
+              type="button"
+              onclick="selectServiceAndScroll('Gel Nails & Nail Art')"
+              class="w-full py-3.5 px-4 rounded-xl bg-brand-coolgray hover:bg-brand-ocean text-brand-navy hover:text-white font-semibold text-sm border border-brand-border hover:border-brand-ocean transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Book This Service</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service 5: Complete Pre-Bridal Packages -->
+        <article class="bg-white rounded-2xl border border-brand-border overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-ocean/50 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-2">
+          <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
+            <div class="relative aspect-[16/10] lg:aspect-auto overflow-hidden bg-brand-coolgray">
+              <img
+                src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1000&q=80"
+                alt="Complete Pre-Bridal Beauty Packages"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-ocean text-white text-xs font-bold backdrop-blur-sm shadow">
+                All-Inclusive Bridal Care
+              </span>
+            </div>
+            <div class="p-6 sm:p-8 flex flex-col justify-between bg-gradient-to-br from-white to-brand-coolgray/60">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-ocean">Head-to-Toe Preparation</span>
+                <h3 class="text-2xl font-bold text-brand-navy mt-1 mb-3">Complete Pre-Bridal Packages</h3>
+                <p class="text-brand-slate text-sm leading-relaxed mb-4">
+                  Customized beauty regimens designed to prepare brides from head to toe—combining radiance facials, hair treatments, manicure/pedicure care, and trial consultations.
+                </p>
+                <ul class="space-y-2 text-xs sm:text-sm text-brand-charcoal mb-6">
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-ocean"></i> Personalized skin &amp; hair timeline consultation
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-ocean"></i> Calm, unhurried private studio sessions
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                onclick="selectServiceAndScroll('Complete Pre-Bridal Packages')"
+                class="w-full py-3.5 px-5 rounded-xl bg-brand-navy hover:bg-brand-sapphire text-white font-semibold text-sm shadow-sm transition-colors flex items-center justify-center gap-2"
+              >
+                <span>Book Pre-Bridal Consultation</span>
+                <i class="fa-solid fa-arrow-right text-xs text-brand-sky"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Visual Lookbook / Studio Gallery -->
+  <section id="gallery" class="py-16 sm:py-24 bg-white border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-14 gap-4">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-coolgray border border-brand-border text-brand-ocean text-xs font-bold uppercase tracking-widest mb-3">
+            Studio Portfolio
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-navy">
+            Visual Lookbook &amp; Craftsmanship
+          </h2>
+        </div>
+        <p class="text-brand-slate text-sm max-w-md">
+          A glimpse into our refined bridal artistry, silky hair finishes, soothing facial care, and glossy nail aesthetics.
+        </p>
+      </div>
+
+      <!-- 2x2 (Mobile) / 4-Column (Desktop) Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
+        <!-- Item 1: Bridal Artistry -->
+        <div class="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-coolgray border border-brand-border shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+            alt="Bridal Artistry and Reception Makeup"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-sapphire/25 to-transparent opacity-85 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-5">
+            <span class="text-[11px] uppercase tracking-wider text-brand-sky font-bold">Bridal Studio</span>
+            <h3 class="text-white font-bold text-sm sm:text-base mt-0.5">Bridal &amp; Registration Artistry</h3>
+          </div>
+        </div>
+
+        <!-- Item 2: Hair Transformation -->
+        <div class="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-coolgray border border-brand-border shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80"
+            alt="Silky Hair Straightening and Styling"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-sapphire/25 to-transparent opacity-85 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-5">
+            <span class="text-[11px] uppercase tracking-wider text-brand-sky font-bold">Hair Care</span>
+            <h3 class="text-white font-bold text-sm sm:text-base mt-0.5">Silk Smoothing &amp; Updos</h3>
+          </div>
+        </div>
+
+        <!-- Item 3: Skincare Treatment -->
+        <div class="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-coolgray border border-brand-border shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+            alt="Skin Pampering Facial Therapy"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-sapphire/25 to-transparent opacity-85 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-5">
+            <span class="text-[11px] uppercase tracking-wider text-brand-sky font-bold">Skin Therapy</span>
+            <h3 class="text-white font-bold text-sm sm:text-base mt-0.5">Hydrating Radiance Facials</h3>
+          </div>
+        </div>
+
+        <!-- Item 4: Nail Aesthetics -->
+        <div class="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-coolgray border border-brand-border shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80"
+            alt="Gel Manicure and Bridal Nail Aesthetics"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-sapphire/25 to-transparent opacity-85 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-5">
+            <span class="text-[11px] uppercase tracking-wider text-brand-sky font-bold">Nail Couture</span>
+            <h3 class="text-white font-bold text-sm sm:text-base mt-0.5">Glossy Gel Nails &amp; Art</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Why Choose SUN GLOW & Client Testimonials -->
+  <section id="reviews" class="py-16 sm:py-24 bg-brand-coolgray/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Why Choose Header -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-block px-3 py-1 rounded-full bg-white border border-brand-border text-brand-ocean text-xs font-bold uppercase tracking-widest mb-3">
+          The SUN GLOW Standard
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-navy mb-3">
+          Why Brides &amp; Clients Trust Us
+        </h2>
+        <p class="text-brand-slate text-sm sm:text-base">
+          Renowned across Vavuniya for calm, attentive service and lasting results.
+        </p>
+      </div>
+
+      <!-- 3 Sleek Gray-Bordered Highlight Boxes -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border border-brand-border shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-brand-offwhite border border-brand-border flex items-center justify-center text-brand-ocean text-xl mb-4">
+            <i class="fa-solid fa-heart-circle-check"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy mb-2">Unhurried Professional Patience</h3>
+          <p class="text-brand-slate text-sm leading-relaxed">
+            Every makeover and treatment is performed calmly without rushing, ensuring every detail aligns with your skin tone and personal style.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border border-brand-border shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-brand-offwhite border border-brand-border flex items-center justify-center text-brand-sapphire text-xl mb-4">
+            <i class="fa-solid fa-shield-sparkles"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy mb-2">Premium Salon Hygiene &amp; Care</h3>
+          <p class="text-brand-slate text-sm leading-relaxed">
+            Strict tool sanitization, skin-safe international cosmetics, and gentle techniques designed to nourish your skin, hair, and nails.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border border-brand-border shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-brand-offwhite border border-brand-border flex items-center justify-center text-amber-500 text-xl mb-4">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-navy mb-2">4.6★ Trusted Local Reputation</h3>
+          <p class="text-brand-slate text-sm leading-relaxed">
+            Backed by 18+ verified Google reviews from happy brides and regular clients in Vavuniya who recommend our warm hospitality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Verified-Style Client Review Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-sm gap-0.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-xs font-medium text-brand-ocean bg-sky-50 px-2.5 py-0.5 rounded-full border border-sky-200">
+                Bridal Makeover
+              </span>
+            </div>
+            <p class="text-brand-charcoal text-sm leading-relaxed italic mb-5">
+              "Booked SUN GLOW for my registration makeover and was amazed by their patience and attention to detail. The makeup looked natural, luminous, and stayed flawless all day!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-brand-coolgray">
+            <div class="w-9 h-9 rounded-full bg-brand-navy text-white font-bold text-xs flex items-center justify-center">
+              AK
+            </div>
+            <div>
+              <p class="text-sm font-bold text-brand-navy">Anusha K.</p>
+              <p class="text-xs text-brand-slate">Verified Google Review</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-sm gap-0.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-xs font-medium text-brand-ocean bg-sky-50 px-2.5 py-0.5 rounded-full border border-sky-200">
+                Facial &amp; Skin Care
+              </span>
+            </div>
+            <p class="text-brand-charcoal text-sm leading-relaxed italic mb-5">
+              "One of the cleanest and most welcoming studios in Vavuniya. My skin-pampering facial was super relaxing and my skin felt visibly brighter immediately afterward."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-brand-coolgray">
+            <div class="w-9 h-9 rounded-full bg-brand-sapphire text-white font-bold text-xs flex items-center justify-center">
+              DS
+            </div>
+            <div>
+              <p class="text-sm font-bold text-brand-navy">Dilani S.</p>
+              <p class="text-xs text-brand-slate">Verified Google Review</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-amber-400 text-sm gap-0.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-xs font-medium text-brand-ocean bg-sky-50 px-2.5 py-0.5 rounded-full border border-sky-200">
+                Hair &amp; Gel Nails
+              </span>
+            </div>
+            <p class="text-brand-charcoal text-sm leading-relaxed italic mb-5">
+              "Got my hair straightening and gel nails done before a family wedding. They took time to explain aftercare and delivered super neat, glossy results."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-brand-coolgray">
+            <div class="w-9 h-9 rounded-full bg-brand-ocean text-white font-bold text-xs flex items-center justify-center">
+              MR
+            </div>
+            <div>
+              <p class="text-sm font-bold text-brand-navy">Meera R.</p>
+              <p class="text-xs text-brand-slate">Verified Google Review</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Interactive Appointment Booking Form (Direct WhatsApp Integration) -->
+  <section id="booking" class="py-16 sm:py-24 bg-white border-t border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-brand-offwhite rounded-3xl border border-brand-border shadow-xl overflow-hidden">
+        <!-- Top Slate-Blue Banner -->
+        <div class="bg-gradient-to-r from-brand-navy via-brand-sapphire to-brand-ocean px-6 sm:px-10 py-8 text-white">
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-brand-sky mb-2">
+            <i class="fa-brands fa-whatsapp text-base"></i> Instant WhatsApp Reservation
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold">
+            Reserve Your Studio Session
+          </h2>
+          <p class="text-slate-200 text-sm mt-2">
+            Select your preferred service and schedule below. Submitting opens a pre-filled WhatsApp message directly with our studio coordinator.
+          </p>
+        </div>
+
+        <!-- Booking Form -->
+        <form id="whatsapp-booking-form" class="p-6 sm:p-10 space-y-6" novalidate>
+          <!-- Alert Message Container -->
+          <div id="form-alert" class="hidden p-4 rounded-xl text-sm font-medium"></div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <!-- Client Name -->
+            <div>
+              <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+                Full Name <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-brand-slate">
+                  <i class="fa-regular fa-user"></i>
+                </span>
+                <input
+                  type="text"
+                  id="clientName"
+                  name="clientName"
+                  required
+                  placeholder="e.g., Kavitha Selvarajah"
+                  class="w-full pl-10 pr-4 py-3.5 rounded-xl bg-white border border-brand-border text-brand-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-brand-ocean focus:border-brand-ocean transition"
+                />
+              </div>
+            </div>
+
+            <!-- Mobile Number -->
+            <div>
+              <label for="clientPhone" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+                Mobile / WhatsApp Number <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-brand-slate">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <input
+                  type="tel"
+                  id="clientPhone"
+                  name="clientPhone"
+                  required
+                  placeholder="e.g., 077 123 4567"
+                  class="w-full pl-10 pr-4 py-3.5 rounded-xl bg-white border border-brand-border text-brand-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-brand-ocean focus:border-brand-ocean transition"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Selection Dropdown -->
+          <div>
+            <label for="serviceSelect" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+              Select Service <span class="text-rose-500">*</span>
+            </label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-brand-ocean">
+                <i class="fa-solid fa-sparkles"></i>
+              </span>
+              <select
+                id="serviceSelect"
+                name="serviceSelect"
+                required
+                class="w-full pl-10 pr-10 py-3.5 rounded-xl bg-white border border-brand-border text-brand-charcoal text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-ocean focus:border-brand-ocean transition appearance-none"
+              >
+                <option value="" disabled selected>Choose a treatment or bridal service...</option>
+                <option value="Registration & Bridal Makeovers">Registration &amp; Bridal Makeovers</option>
+                <option value="Hair Straightening & Styling">Hair Straightening &amp; Styling</option>
+                <option value="Advanced Facials & Skin Care">Advanced Facials &amp; Skin Care</option>
+                <option value="Gel Nails & Nail Art">Gel Nails &amp; Nail Art</option>
+                <option value="Complete Pre-Bridal Packages">Complete Pre-Bridal Packages</option>
+              </select>
+              <span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-brand-slate">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Preferred Date & Time -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="preferredDate" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+                Preferred Date (Mon – Sat) <span class="text-rose-500">*</span>
+              </label>
+              <input
+                type="date"
+                id="preferredDate"
+                name="preferredDate"
+                required
+                class="w-full px-4 py-3.5 rounded-xl bg-white border border-brand-border text-brand-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-brand-ocean focus:border-brand-ocean transition"
+              />
+              <p class="text-[11px] text-brand-slate mt-1">Note: Studio is closed on Sundays.</p>
+            </div>
+
+            <div>
+              <label for="preferredTime" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+                Preferred Time Slot <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <select
+                  id="preferredTime"
+                  name="preferredTime"
+                  required
+                  class="w-full px-4 py-3.5 rounded-xl bg-white border border-brand-border text-brand-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-brand-ocean focus:border-brand-ocean transition appearance-none"
+                >
+                  <option value="8:30 AM – 10:30 AM (Morning)">8:30 AM – 10:30 AM (Morning)</option>
+                  <option value="10:30 AM – 1:00 PM (Mid-Day)">10:30 AM – 1:00 PM (Mid-Day)</option>
+                  <option value="1:30 PM – 4:00 PM (Afternoon)">1:30 PM – 4:00 PM (Afternoon)</option>
+                  <option value="4:00 PM – 6:30 PM (Evening)">4:00 PM – 6:30 PM (Evening)</option>
+                </select>
+                <span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-brand-slate">
+                  <i class="fa-regular fa-clock text-xs"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div>
+            <label for="clientNotes" class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+              Additional Notes / Event Details (Optional)
+            </label>
+            <textarea
+              id="clientNotes"
+              name="clientNotes"
+              rows="3"
+              placeholder="Share any specific requests, event date, or skin/hair preferences..."
+              class="w-full px-4 py-3 rounded-xl bg-white border border-brand-border text-brand-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-brand-ocean focus:border-brand-ocean transition"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full py-4 px-6 rounded-xl bg-brand-ocean hover:bg-sky-600 text-white font-bold text-base shadow-lg shadow-sky-900/15 transition-all flex items-center justify-center gap-2.5 active:scale-[0.99]"
+          >
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Send Booking Request via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Location, Hours & Footer -->
+  <section id="contact" class="py-16 sm:py-20 bg-brand-coolgray border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+
+        <!-- Left Column: Address, Phone, Hours & Directions -->
+        <div class="bg-white rounded-3xl p-6 sm:p-10 border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-coolgray border border-brand-border text-brand-ocean text-xs font-bold uppercase tracking-widest mb-3">
+              Visit Our Studio
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-navy mb-6">
+              Location &amp; Studio Hours
+            </h2>
+
+            <div class="space-y-5">
+              <!-- Address -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-xl bg-brand-offwhite border border-brand-border flex items-center justify-center text-brand-ocean shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-brand-navy uppercase tracking-wider">Studio Address</h3>
+                  <p class="text-brand-charcoal text-base font-medium mt-1">
+                    6, 60 1st Cross St, Vavuniya 43000, Sri Lanka
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone / WhatsApp -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-xl bg-brand-offwhite border border-brand-border flex items-center justify-center text-brand-ocean shrink-0 mt-0.5">
+                  <i class="fa-solid fa-phone text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-brand-navy uppercase tracking-wider">Phone &amp; WhatsApp</h3>
+                  <p class="text-brand-charcoal text-base font-semibold mt-1">
+                    <a href="tel:+94774391667" class="hover:text-brand-ocean transition">077 439 1667</a>
+                    <span class="text-brand-slate font-normal text-sm ml-1">(+94 77 439 1667)</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Operating Hours -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-xl bg-brand-offwhite border border-brand-border flex items-center justify-center text-brand-ocean shrink-0 mt-0.5">
+                  <i class="fa-regular fa-clock text-lg"></i>
+                </div>
+                <div class="w-full">
+                  <h3 class="text-sm font-bold text-brand-navy uppercase tracking-wider">Operating Hours</h3>
+                  <div class="mt-2 space-y-1.5 text-sm">
+                    <div class="flex justify-between py-1 border-b border-brand-coolgray">
+                      <span class="text-brand-charcoal font-medium">Monday – Saturday</span>
+                      <span class="text-brand-navy font-bold">8:30 AM – 6:30 PM</span>
+                    </div>
+                    <div class="flex justify-between py-1">
+                      <span class="text-brand-slate font-medium">Sunday</span>
+                      <span class="text-rose-600 font-bold">Closed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Get Directions Button -->
+          <div class="mt-8 pt-6 border-t border-brand-border flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3afc15b2040ba799:0x2429c6b6ebce73a4"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex-1 inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-brand-navy hover:bg-brand-sapphire text-white font-bold text-sm shadow-sm transition"
+            >
+              <i class="fa-solid fa-diamond-turn-right text-brand-sky text-base"></i>
+              Get Directions on Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Embedded Google Map Frame -->
+        <div class="bg-white rounded-3xl border border-brand-border shadow-sm overflow-hidden min-h-[340px] lg:min-h-full relative">
+          <iframe
+            title="SUN GLOW Bridal & Beauty Studio Location in Vavuniya"
+            src="https://maps.google.com/maps?q=6%2C%2060%201st%20Cross%20St%2C%20Vavuniya%2043000%2C%20Sri%20Lanka&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full min-h-[340px] border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Navy Footer -->
+  <footer class="bg-brand-navy text-slate-300 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-slate-800">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-xl bg-brand-sapphire flex items-center justify-center text-brand-sky">
+              <i class="fa-solid fa-sparkles"></i>
+            </span>
+            <span class="text-xl font-extrabold tracking-wider text-white">SUN GLOW</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-md">
+            Modern Elegance &amp; Timeless Radiance — Vavuniya’s Premier Bridal &amp; Beauty Studio.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-6 text-sm font-medium">
+          <a href="#home" class="hover:text-brand-sky transition">Home</a>
+          <a href="#services" class="hover:text-brand-sky transition">Services</a>
+          <a href="#gallery" class="hover:text-brand-sky transition">Gallery</a>
+          <a href="#reviews" class="hover:text-brand-sky transition">Reviews</a>
+          <a href="#booking" class="hover:text-brand-sky transition">Book Now</a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; <span id="current-year"></span> SUN GLOW Bridal &amp; Beauty Studio. All rights reserved.</p>
+        <p>6, 60 1st Cross St, Vavuniya 43000, Sri Lanka • Tel: 077 439 1667</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Mobile Action Bar (App-Style on Small Screens) -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white/95 backdrop-blur-md border-t border-brand-border px-3 py-2.5 shadow-[0_-4px_20px_rgba(15,23,42,0.08)]">
+    <div class="grid grid-cols-2 gap-2.5 max-w-md mx-auto">
+      <a
+        href="tel:+94774391667"
+        class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-navy text-white font-bold text-sm active:scale-[0.98] transition"
+      >
+        <i class="fa-solid fa-phone text-brand-sky"></i>
+        Call Now
+      </a>
+      <a
+        href="https://wa.me/94774391667?text=Hello%20SUN%20GLOW!%20I%20would%20like%20to%20book%20an%20appointment."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-ocean text-white font-bold text-sm shadow-sm active:scale-[0.98] transition"
+      >
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        WhatsApp Book
+      </a>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript for Drawer, Service Auto-Select, Validation & WhatsApp Booking -->
+  <script>
+    // Set current copyright year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Set minimum selectable date in booking form to today
+    const dateInput = document.getElementById('preferredDate');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+
+    // Mobile Navigation Drawer Logic
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeDrawerBtn = document.getElementById('close-drawer-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const drawerBackdrop = document.getElementById('drawer-backdrop');
+    const drawerPanel = document.getElementById('drawer-panel');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function openDrawer() {
+      mobileDrawer.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      requestAnimationFrame(() => {
+        drawerBackdrop.classList.remove('opacity-0');
+        drawerBackdrop.classList.add('opacity-100');
+        drawerPanel.classList.remove('translate-x-full');
+        drawerPanel.classList.add('translate-x-0');
+      });
+    }
+
+    function closeDrawer() {
+      drawerBackdrop.classList.remove('opacity-100');
+      drawerBackdrop.classList.add('opacity-0');
+      drawerPanel.classList.remove('translate-x-0');
+      drawerPanel.classList.add('translate-x-full');
+      document.body.classList.remove('overflow-hidden');
+      setTimeout(() => {
+        mobileDrawer.classList.add('hidden');
+      }, 300);
+    }
+
+    mobileMenuBtn.addEventListener('click', openDrawer);
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+    drawerBackdrop.addEventListener('click', closeDrawer);
+    mobileNavLinks.forEach(link => link.addEventListener('click', closeDrawer));
+
+    // Auto-Select Service from Service Card & Smooth Scroll to Booking Form
+    function selectServiceAndScroll(serviceName) {
+      const serviceSelect = document.getElementById('serviceSelect');
+      const bookingSection = document.getElementById('booking');
+
+      if (serviceSelect) {
+        serviceSelect.value = serviceName;
+        serviceSelect.classList.add('ring-2', 'ring-brand-ocean');
+        setTimeout(() => {
+          serviceSelect.classList.remove('ring-2', 'ring-brand-ocean');
+        }, 1500);
+      }
+
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Interactive WhatsApp Booking Form Validation & Submission
+    const bookingForm = document.getElementById('whatsapp-booking-form');
+    const formAlert = document.getElementById('form-alert');
+
+    function showAlert(message, isError = true) {
+      formAlert.textContent = message;
+      formAlert.classList.remove('hidden', 'bg-rose-50', 'text-rose-700', 'border-rose-200', 'bg-sky-50', 'text-brand-navy', 'border-sky-200');
+      if (isError) {
+        formAlert.classList.add('bg-rose-50', 'text-rose-700', 'border', 'border-rose-200');
+      } else {
+        formAlert.classList.add('bg-sky-50', 'text-brand-navy', 'border', 'border-sky-200');
+      }
+      formAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    bookingForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const clientName = document.getElementById('clientName').value.trim();
+      const clientPhone = document.getElementById('clientPhone').value.trim();
+      const service = document.getElementById('serviceSelect').value;
+      const preferredDate = document.getElementById('preferredDate').value;
+      const preferredTime = document.getElementById('preferredTime').value;
+      const clientNotes = document.getElementById('clientNotes').value.trim();
+
+      if (!clientName) {
+        showAlert('Please enter your full name to continue.');
+        document.getElementById('clientName').focus();
+        return;
+      }
+
+      if (!clientPhone || clientPhone.replace(/\D/g, '').length < 9) {
+        showAlert('Please enter a valid mobile or WhatsApp number.');
+        document.getElementById('clientPhone').focus();
+        return;
+      }
+
+      if (!service) {
+        showAlert('Please select a service from the dropdown list.');
+        document.getElementById('serviceSelect').focus();
+        return;
+      }
+
+      if (!preferredDate) {
+        showAlert('Please choose your preferred appointment date.');
+        document.getElementById('preferredDate').focus();
+        return;
+      }
+
+      // Check if selected date is a Sunday (0 = Sunday)
+      const selectedDay = new Date(preferredDate + 'T00:00:00').getDay();
+      if (selectedDay === 0) {
+        showAlert('SUN GLOW is closed on Sundays. Please select a date between Monday and Saturday.');
+        document.getElementById('preferredDate').focus();
+        return;
+      }
+
+      // Format readable date
+      const formattedDate = new Date(preferredDate + 'T00:00:00').toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+
+      // Construct clean English WhatsApp message
+      let message = `Hello SUN GLOW Vavuniya! I would like to request an appointment.\n\n`;
+      message += `*Client Name:* ${clientName}\n`;
+      message += `*Mobile Number:* ${clientPhone}\n`;
+      message += `*Service:* ${service}\n`;
+      message += `*Preferred Date:* ${formattedDate}\n`;
+      message += `*Preferred Time:* ${preferredTime}\n`;
+      if (clientNotes) {
+        message += `*Notes:* ${clientNotes}\n`;
+      }
+      message += `\nPlease confirm availability. Thank you!`;
+
+      const whatsappUrl = `https://wa.me/94774391667?text=${encodeURIComponent(message)}`;
+
+      showAlert('Redirecting you to WhatsApp with your booking details...', false);
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
